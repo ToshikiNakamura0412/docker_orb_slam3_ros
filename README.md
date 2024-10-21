@@ -4,6 +4,8 @@
 
 The docker environment for [ORB-SLAM3](https://github.com/thien94/orb_slam3_ros.git) with ROS.
 
+![image](https://github.com/ToshikiNakamura0412/docker_orb_slam3_ros/wiki/images/docker_orb_slam3_ros.png)
+
 ## Environment
 ### OS
 - Ubuntu

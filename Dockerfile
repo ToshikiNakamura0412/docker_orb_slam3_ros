@@ -90,6 +90,10 @@ RUN echo "source ~/ws/devel/setup.bash" >> ~/.bashrc
 RUN echo "export ROS_DISTRO=${ROS_DISTRO}" >> ~/.bashrc
 RUN echo "export ROS_WORKSPACE=~/ws" >> ~/.bashrc
 RUN echo "export ROS_PACKAGE_PATH=~/ws/src:\$ROS_PACKAGE_PATH" >> ~/.bashrc
+
+# ================
+# Build ORB-SLAM3
+# ================
 RUN mkdir -p ~/ws/src && git clone https://github.com/thien94/orb_slam3_ros.git ~/ws/src/orb_slam3_ros
 RUN cd ~/ws \
     && sudo ldconfig \

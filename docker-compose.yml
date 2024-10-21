@@ -10,6 +10,7 @@ services:
     privileged: true
     environment:
       DISPLAY: $DISPLAY
+      TERM: screen-256color
       NVIDIA_DRIVER_CAPABILITIES: all
     volumes:
       - type: bind

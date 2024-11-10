@@ -87,7 +87,7 @@ RUN echo "export ROS_PACKAGE_PATH=~/ws/src:\$ROS_PACKAGE_PATH" >> ~/.bashrc
 # ================
 # Build ORB-SLAM3
 # ================
-RUN mkdir -p ~/ws/src && git clone https://github.com/thien94/orb_slam3_ros.git ~/ws/src/orb_slam3_ros
+RUN mkdir -p ~/ws/src && git clone -b main https://github.com/ToshikiNakamura0412/orb_slam3_ros.git ~/ws/src/orb_slam3_ros
 RUN cd ~/ws \
     && sudo ldconfig \
     && /bin/bash -c "source /opt/ros/${ROS_DISTRO}/setup.bash && catkin build -j4"
